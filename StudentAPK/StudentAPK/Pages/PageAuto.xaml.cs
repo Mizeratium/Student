@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentAPK.Database;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,22 +30,22 @@ namespace StudentAPK.Pages
         {
             try
             {
-                //var _sel = BD_Class.connection.Employee.Where(z => z.login == txbLogin.Text && z.password == txbPassword.Password).FirstOrDefault();
-                //if (_sel != null)
-                //{
-                //    if (_sel.id_role == 1)
-                //    {
-                //        NavigationService.Navigate(new PageApp.AdminMenuPage()); //Администратор
-                //    }
-                //    else if (_sel.id_role == 2)
-                //    {
-                //        NavigationService.Navigate(new PageApp.CashierPage()); //Кассир
-                //    }
-                //    else
-                //    {
-                //        NavigationService.Navigate(new PageApp.EmployeePage()); //Сотрудник зала
-                //    }
-                //}
+                var _sel = ClassDB.connection.Student.Where(z => z.login == txbLogin.Text && z.password == txbPassword.Password).FirstOrDefault();
+                if (_sel != null)
+                {
+                    if (_sel.role_id == 1 || _sel.role_id == 2)
+                    {
+                        NavigationService.Navigate(new Pages.PageAdmin()); //Зав и препод
+                    }
+                    else if (_sel.role_id == 3)
+                    {
+                        NavigationService.Navigate(new Pages.PageStudent()); //Студент
+                    }
+                    else
+                    {
+                        MessageBox.Show("Неверный логин или пароль");
+                    }
+                }
             }
             catch (Exception ex)
             {

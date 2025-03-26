@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Практика колледж\Кумышбаева\Student\StudentAPK\StudentAPK\App.xaml
-4-1804652819
+484122583
 2-1293242089
-1736437860
+17-580884410
 18-1832535369
-MainWindow.xaml;Pages\PageTeach.xaml;Pages\PageAuto.xaml;Pages\PageStudent.xaml;
+MainWindow.xaml;Pages\PageAdmin.xaml;Pages\PageAuto.xaml;Pages\PageStudent.xaml;
 
-False
+True
 
