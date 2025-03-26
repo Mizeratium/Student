@@ -35,7 +35,7 @@ namespace StudentAPK.Pages
                 {
                     if (_sel.role_id == 1 || _sel.role_id == 2)
                     {
-                        NavigationService.Navigate(new Pages.PageAdmin()); //Зав и препод
+                        NavigationService.Navigate(new Pages.PageTeacher()); //Зав и препод
                     }
                     else if (_sel.role_id == 3)
                     {

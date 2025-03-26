@@ -104,10 +104,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\PageAdmin.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\PageAuto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,16 +112,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PageStudentList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageTeacher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\PageAdmin.xaml.cs">
-      <DependentUpon>PageAdmin.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\PageAuto.xaml.cs">
       <DependentUpon>PageAuto.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageStudent.xaml.cs">
       <DependentUpon>PageStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageStudentList.xaml.cs">
+      <DependentUpon>PageStudentList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageTeacher.xaml.cs">
+      <DependentUpon>PageTeacher.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
