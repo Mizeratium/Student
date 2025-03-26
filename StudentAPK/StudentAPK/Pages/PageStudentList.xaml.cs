@@ -21,11 +21,34 @@ namespace StudentAPK.Pages
     /// </summary>
     public partial class PageStudentList : Page
     {
+        Student stud = new Student();
         public PageStudentList()
         {
             InitializeComponent();
             StudList.ItemsSource = ClassDB.connection.Student.ToList();
+            var collect = ClassDB.connection.Groups.ToList();
+            cmbGroup.ItemsSource = collect;
+            cmbGroup.DisplayMemberPath = "title";
             this.DataContext = this;
+        }
+
+        //поисковая строка
+        private void txbSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txbSearch.Text != null)
+            {
+                StudList.ItemsSource = ClassDB.connection.Student.Where(z => z.surname.Contains(txbSearch.Text) || z.name.Contains(txbSearch.Text) || z.patronymic.Contains(txbSearch.Text));
+            }
+        }
+
+        private void cmbGroup_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbGroup.SelectedIndex != 0)
+            {
+                var selCombo = cmbGroup.SelectedItem as Groups;
+                stud.group_id = selCombo.ID;
+                StudList.ItemsSource = ClassDB.connection.Student.Where(z => z.group_id == selCombo.ID); //не работает
+            }
         }
     }
 }

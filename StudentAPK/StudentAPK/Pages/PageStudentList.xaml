@@ -14,9 +14,9 @@
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
         <DockPanel Grid.Row="0">
-            <TextBox x:Name="txbSearch" Margin="3" Width="400" Height="25"/>
+            <TextBox x:Name="txbSearch" Margin="3" Width="400" Height="25" TextChanged="txbSearch_TextChanged"/>
             <Label Content="Группа" Height="25" Margin="3"/>
-            <ComboBox x:Name="cmbGroup" Width="100" Height="25"/>
+            <ComboBox x:Name="cmbGroup" Width="100" Height="25" SelectionChanged="cmbGroup_SelectionChanged"/>
         </DockPanel>
         <StackPanel Grid.Row="1">
             <ListView x:Name="StudList" ItemsSource="{Binding Student}">
