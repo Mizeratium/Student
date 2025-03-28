@@ -22,6 +22,7 @@ namespace StudentAPK.Database
         public string password { get; set; }
         public int role_id { get; set; }
         public int group_id { get; set; }
+        public bool isDelete { get; set; }
     
         public virtual Groups Groups { get; set; }
         public virtual Roles Roles { get; set; }

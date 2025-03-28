@@ -26,6 +26,7 @@
     <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="role_id" Type="int" Nullable="false" />
     <Property Name="group_id" Type="int" Nullable="false" />
+    <Property Name="isDelete" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>

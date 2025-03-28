@@ -32,8 +32,8 @@
                                 <TextBlock Text="{Binding password}" Margin="3" Foreground="CadetBlue"/>
                             </DockPanel>
                             <DockPanel Grid.Column="1" Width="250">
-                                <Button x:Name="btnEdit" Width="100" Content="Изменить" Margin="3" FontSize="12" BorderThickness="0"/>
-                                <Button x:Name="btnDelete" Width="100" Content="Удалить" Margin="3" FontSize="12" BorderThickness="0"/>
+                                <Button x:Name="btnEdit" Width="100" Content="Изменить" Margin="3" FontSize="12" BorderThickness="0" Click="btnEdit_Click"/>
+                                <Button x:Name="btnDelete" Width="100" Content="Удалить" Margin="3" FontSize="12" BorderThickness="0" Click="btnDelete_Click"/>
                             </DockPanel>
                         </DockPanel>
                     </DataTemplate>

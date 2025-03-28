@@ -20,6 +20,7 @@
     <EntitySetMapping Name="Student">
       <EntityTypeMapping TypeName="StudentDBModel.Student">
         <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="isDelete" ColumnName="isDelete" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="surname" ColumnName="surname" />
           <ScalarProperty Name="name" ColumnName="name" />

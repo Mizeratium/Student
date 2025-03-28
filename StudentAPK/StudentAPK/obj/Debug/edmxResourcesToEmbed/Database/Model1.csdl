@@ -30,6 +30,7 @@
     <Property Name="group_id" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Groups" Relationship="Self.FK_Student_Groups" FromRole="Student" ToRole="Groups" />
     <NavigationProperty Name="Roles" Relationship="Self.FK_Student_Roles" FromRole="Student" ToRole="Roles" />
+    <Property Name="isDelete" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
