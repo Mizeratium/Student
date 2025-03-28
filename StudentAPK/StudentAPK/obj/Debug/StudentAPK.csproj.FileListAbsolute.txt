@@ -28,3 +28,7 @@ D:\Практика колледж\Кумышбаева\Student\StudentAPK\Stude
 D:\Практика колледж\Кумышбаева\Student\StudentAPK\StudentAPK\obj\Debug\StudentAPK.csproj.CopyComplete
 D:\Практика колледж\Кумышбаева\Student\StudentAPK\StudentAPK\obj\Debug\StudentAPK.exe
 D:\Практика колледж\Кумышбаева\Student\StudentAPK\StudentAPK\obj\Debug\StudentAPK.pdb
+D:\Практика колледж\Кумышбаева\Student\StudentAPK\StudentAPK\obj\Debug\WindowEdit.g.cs
+D:\Практика колледж\Кумышбаева\Student\StudentAPK\StudentAPK\obj\Debug\WindowEdit.baml
+D:\Практика колледж\Кумышбаева\Student\StudentAPK\StudentAPK\obj\Debug\Pages\PageNewStudent.g.cs
+D:\Практика колледж\Кумышбаева\Student\StudentAPK\StudentAPK\obj\Debug\Pages\PageNewStudent.baml

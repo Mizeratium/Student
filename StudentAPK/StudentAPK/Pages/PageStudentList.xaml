@@ -18,7 +18,8 @@
             <Label Content="Группа" Height="25" Margin="3"/>
             <ComboBox x:Name="cmbGroup" Width="100" Height="25" SelectionChanged="cmbGroup_SelectionChanged"/>
         </DockPanel>
-        <StackPanel Grid.Row="1">
+        <ScrollViewer Grid.Row="1">
+        <StackPanel>
             <ListView x:Name="StudList" ItemsSource="{Binding Student}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -40,5 +41,6 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>

@@ -17,16 +17,16 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Column="1" Grid.Row="0" Margin="3" VerticalAlignment="Center">
-            <TextBox Text="{Binding surname}" Margin="3"/>
-            <TextBox Text="{Binding name}" Margin="3"/>
-            <TextBox Text="{Binding patronymic}" Margin="3"/>
-            <TextBox Text="{Binding login}" Margin="3"/>
-            <TextBox Text="{Binding password}" Margin="3"/>
-            <ComboBox Text="{Binding group_id}" Margin="3"/>
+            <TextBox x:Name="txbSurname" Text="{Binding surname}" Margin="3"/>
+            <TextBox x:Name="txbName" Text="{Binding name}" Margin="3"/>
+            <TextBox x:Name="txbPat" Text="{Binding patronymic}" Margin="3"/>
+            <TextBox x:Name="txbLogin" Text="{Binding login}" Margin="3"/>
+            <TextBox x:Name="txbPas" Text="{Binding password}" Margin="3"/>
+            <ComboBox x:Name="cmbGroup" Margin="3"/>
         </StackPanel> 
         <StackPanel Grid.Row="1" Grid.Column="1">
-            <Button Content="Сохранить и выйти" Click="Button_Click" Margin="5" BorderThickness="0"/>
-            <Button Content="Выйти без сохранения" Click="Button_Click_1"  Margin="5" BorderThickness="0"/>
+            <Button Content="Сохранить и выйти" Click="ClEventSave" Margin="5" BorderThickness="0"/>
+            <Button Content="Выйти без сохранения" Click="ClEventGoBack"  Margin="5" BorderThickness="0"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -37,10 +37,10 @@ namespace StudentAPK.Pages
                     {
                         NavigationService.Navigate(new Pages.PageTeacher()); //Зав и препод
                     }
-                    else if (_sel.role_id == 3)
-                    {
-                        NavigationService.Navigate(new Pages.PageStudent()); //Студент
-                    }
+                    //else if (_sel.role_id == 3)
+                    //{
+                    //    NavigationService.Navigate(new Pages.PageStudent()); //Студент
+                    //}
                     else
                     {
                         MessageBox.Show("Неверный логин или пароль");

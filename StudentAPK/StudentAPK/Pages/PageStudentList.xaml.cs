@@ -26,6 +26,7 @@ namespace StudentAPK.Pages
         public PageStudentList()
         {
             InitializeComponent();
+            this.DataContext = this;
             StudList.ItemsSource = ClassDB.connection.Student.Where(z => z.isDelete == false).ToList();
             var collect = ClassDB.connection.Groups.ToList();
             cmbGroup.ItemsSource = collect;

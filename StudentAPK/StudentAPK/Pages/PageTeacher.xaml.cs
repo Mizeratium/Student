@@ -31,6 +31,10 @@ namespace StudentAPK.Pages
             {
                 NavFrame.NavigationService.Navigate(new Pages.PageStudentList());
             }
+            else if (a.Name == "btnAddNewStudent")
+            {
+                NavFrame.NavigationService.Navigate(new Pages.PageNewStudent());
+            }
         }
     }
 }

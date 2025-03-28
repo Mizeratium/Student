@@ -64,6 +64,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="StudentClass.cs" />
+    <Compile Include="Pages\PageNewStudent.xaml.cs">
+      <DependentUpon>PageNewStudent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowEdit.xaml.cs">
       <DependentUpon>WindowEdit.xaml</DependentUpon>
     </Compile>
@@ -108,6 +112,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\PageAuto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PageNewStudent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
